@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+    <style type="text/css">
+      img {
+        border-radius: 50%；;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <button type="button" class="btn btn-outline-info btn-secondary">
+        筛选：
+      </button>
+      <button type="button" class="btn btn-outline-info btn-primary">
+        国籍
+      </button>
+      <div style="float: right">
+        <div class="input-group-sm mt-3 mb-3" style="float: left">
+          <div class="input-group-prepend" style="float: left">
+            <button
+              type="button"
+              class="btn btn-outline-secondary dropdown-toggle"
+              data-toggle="dropdown"
+            >
+              姓名
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">a</a>
+              <a class="dropdown-item" href="#">b</a>
+              <a class="dropdown-item" href="#">c</a>
+            </div>
+          </div>
+          <input
+            type="text"
+            class="form-control-sm"
+            placeholder="王伟"
+            style="float: left"
+          />
+          <div class="input-group-append">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+          </div>
+        </div>
+      </div>
+      <table class="table table-primary" style="text-align: center">
+        <thead>
+          <tr class="table-warning">
+            <th>头像</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>手机号</th>
+            <th>国籍</th>
+            <th>爱好</th>
+            <th>头衔</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody class="table-info">
+          <tr>
+            <td container-sm>
+              <img
+                src="./images/title.jpg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Cinque Terre"
+                width="60px"
+              />
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >小龙女</span
+              ><br /><span style="font-size: small">昵称：小莫的程序</span>
+            </td>
+            <td>
+              <i
+                class="bi bi-gender-male"
+                style="font-size: 2rem; color: cornflowerblue"
+              ></i>
+              <i
+                class="bi bi-gender-female"
+                style="font-size: 2rem; color: rgb(255, 49, 255)"
+              ></i>
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >25</span
+              ><br /><span style="font-size: small">（单身狗）</span>
+            </td>
+
+            <td>
+              <span style="font-size: larger; text-align: center">+86</span
+              ><span style="font-size: small">（中国）</span><br />
+              <span style="font-size: larger; text-align: center"
+                >13576767622</span
+              >
+            </td>
+            <td>
+              <img
+                src="./images/china.jpg"
+                alt=""
+                class="img-fluid"
+                width="70px"
+              /><br />
+              <span style="color: red">中国</span>
+            </td>
+
+            <td>
+              <span class="badge badge-primary">跑步</span>
+              <span class="badge badge-secondary">看电影</span>
+              <span class="badge badge-success">二次元</span>
+              <span class="badge badge-danger">小猫小狗</span>
+              <span class="badge badge-warning">小说</span>
+            </td>
+
+            <td>
+              小白<br />
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+            </td>
+            <td><button type="button" class="btn btn-light">设置</button></td>
+          </tr>
+
+          <tr>
+            <td container-sm>
+              <img
+                src="./images/title.jpg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Cinque Terre"
+                width="60px"
+              />
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >小龙女</span
+              ><br /><span style="font-size: small">昵称：小莫的程序</span>
+            </td>
+            <td>
+              <i
+                class="bi bi-gender-male"
+                style="font-size: 2rem; color: cornflowerblue"
+              ></i>
+              <i
+                class="bi bi-gender-female"
+                style="font-size: 2rem; color: rgb(255, 49, 255)"
+              ></i>
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >25</span
+              ><br /><span style="font-size: small">（单身狗）</span>
+            </td>
+
+            <td>
+              <span style="font-size: larger; text-align: center">+86</span
+              ><span style="font-size: small">（中国）</span><br />
+              <span style="font-size: larger; text-align: center"
+                >13576767622</span
+              >
+            </td>
+            <td>
+              <img
+                src="./images/china.jpg"
+                alt=""
+                class="img-fluid"
+                width="70px"
+              /><br />
+              <span style="color: red">中国</span>
+            </td>
+
+            <td>
+              <span class="badge badge-primary">跑步</span>
+              <span class="badge badge-secondary">看电影</span>
+              <span class="badge badge-success">二次元</span>
+              <span class="badge badge-danger">小猫小狗</span>
+              <span class="badge badge-warning">小说</span>
+            </td>
+
+            <td>
+              小白<br />
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+            </td>
+            <td><button type="button" class="btn btn-light">设置</button></td>
+          </tr>
+
+          <tr>
+            <td container-sm>
+              <img
+                src="./images/title.jpg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Cinque Terre"
+                width="60px"
+              />
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >小龙女</span
+              ><br /><span style="font-size: small">昵称：小莫的程序</span>
+            </td>
+            <td>
+              <i
+                class="bi bi-gender-male"
+                style="font-size: 2rem; color: cornflowerblue"
+              ></i>
+              <i
+                class="bi bi-gender-female"
+                style="font-size: 2rem; color: rgb(255, 49, 255)"
+              ></i>
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >25</span
+              ><br /><span style="font-size: small">（单身狗）</span>
+            </td>
+
+            <td>
+              <span style="font-size: larger; text-align: center">+86</span
+              ><span style="font-size: small">（中国）</span><br />
+              <span style="font-size: larger; text-align: center"
+                >13576767622</span
+              >
+            </td>
+            <td>
+              <img
+                src="./images/china.jpg"
+                alt=""
+                class="img-fluid"
+                width="70px"
+              /><br />
+              <span style="color: red">中国</span>
+            </td>
+
+            <td>
+              <span class="badge badge-primary">跑步</span>
+              <span class="badge badge-secondary">看电影</span>
+              <span class="badge badge-success">二次元</span>
+              <span class="badge badge-danger">小猫小狗</span>
+              <span class="badge badge-warning">小说</span>
+            </td>
+
+            <td>
+              小白<br />
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+            </td>
+            <td><button type="button" class="btn btn-light">设置</button></td>
+          </tr>
+
+          <tr>
+            <td container-sm>
+              <img
+                src="./images/title.jpg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Cinque Terre"
+                width="60px"
+              />
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >小龙女</span
+              ><br /><span style="font-size: small">昵称：小莫的程序</span>
+            </td>
+            <td>
+              <i
+                class="bi bi-gender-male"
+                style="font-size: 2rem; color: cornflowerblue"
+              ></i>
+              <i
+                class="bi bi-gender-female"
+                style="font-size: 2rem; color: rgb(255, 49, 255)"
+              ></i>
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >25</span
+              ><br /><span style="font-size: small">（单身狗）</span>
+            </td>
+
+            <td>
+              <span style="font-size: larger; text-align: center">+86</span
+              ><span style="font-size: small">（中国）</span><br />
+              <span style="font-size: larger; text-align: center"
+                >13576767622</span
+              >
+            </td>
+            <td>
+              <img
+                src="./images/china.jpg"
+                alt=""
+                class="img-fluid"
+                width="70px"
+              /><br />
+              <span style="color: red">中国</span>
+            </td>
+
+            <td>
+              <span class="badge badge-primary">跑步</span>
+              <span class="badge badge-secondary">看电影</span>
+              <span class="badge badge-success">二次元</span>
+              <span class="badge badge-danger">小猫小狗</span>
+              <span class="badge badge-warning">小说</span>
+            </td>
+
+            <td>
+              小白<br />
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+            </td>
+            <td><button type="button" class="btn btn-light">设置</button></td>
+          </tr>
+
+          <tr>
+            <td container-sm>
+              <img
+                src="./images/title.jpg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Cinque Terre"
+                width="60px"
+              />
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >小龙女</span
+              ><br /><span style="font-size: small">昵称：小莫的程序</span>
+            </td>
+            <td>
+              <i
+                class="bi bi-gender-male"
+                style="font-size: 2rem; color: cornflowerblue"
+              ></i>
+              <i
+                class="bi bi-gender-female"
+                style="font-size: 2rem; color: rgb(255, 49, 255)"
+              ></i>
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >25</span
+              ><br /><span style="font-size: small">（单身狗）</span>
+            </td>
+
+            <td>
+              <span style="font-size: larger; text-align: center">+86</span
+              ><span style="font-size: small">（中国）</span><br />
+              <span style="font-size: larger; text-align: center"
+                >13576767622</span
+              >
+            </td>
+            <td>
+              <img
+                src="./images/china.jpg"
+                alt=""
+                class="img-fluid"
+                width="70px"
+              /><br />
+              <span style="color: red">中国</span>
+            </td>
+
+            <td>
+              <span class="badge badge-primary">跑步</span>
+              <span class="badge badge-secondary">看电影</span>
+              <span class="badge badge-success">二次元</span>
+              <span class="badge badge-danger">小猫小狗</span>
+              <span class="badge badge-warning">小说</span>
+            </td>
+
+            <td>
+              小白<br />
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+            </td>
+            <td><button type="button" class="btn btn-light">设置</button></td>
+          </tr>
+
+          <tr>
+            <td container-sm>
+              <img
+                src="./images/title.jpg"
+                class="img-fluid rounded-circle img-thumbnail"
+                alt="Cinque Terre"
+                width="60px"
+              />
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >小龙女</span
+              ><br /><span style="font-size: small">昵称：小莫的程序</span>
+            </td>
+            <td>
+              <i
+                class="bi bi-gender-male"
+                style="font-size: 2rem; color: cornflowerblue"
+              ></i>
+              <i
+                class="bi bi-gender-female"
+                style="font-size: 2rem; color: rgb(255, 49, 255)"
+              ></i>
+            </td>
+            <td>
+              <span
+                style="font-size: larger; font-weight: bold; text-align: center"
+                >25</span
+              ><br /><span style="font-size: small">（单身狗）</span>
+            </td>
+
+            <td>
+              <span style="font-size: larger; text-align: center">+86</span
+              ><span style="font-size: small">（中国）</span><br />
+              <span style="font-size: larger; text-align: center"
+                >13576767622</span
+              >
+            </td>
+            <td>
+              <img
+                src="./images/china.jpg"
+                alt=""
+                class="img-fluid"
+                width="70px"
+              /><br />
+              <span style="color: red">中国</span>
+            </td>
+
+            <td>
+              <span class="badge badge-primary">跑步</span>
+              <span class="badge badge-secondary">看电影</span>
+              <span class="badge badge-success">二次元</span>
+              <span class="badge badge-danger">小猫小狗</span>
+              <span class="badge badge-warning">小说</span>
+            </td>
+
+            <td>
+              小白<br />
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(255, 251, 0)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+              <i
+                class="bi bi-star-fill"
+                style="font-size: 1rem; color: rgb(138, 138, 138)"
+              ></i>
+            </td>
+            <td><button type="button" class="btn btn-light">设置</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+            >页码</a
+          >
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
